@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: com.shippio.shippiotest.MainPageTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 22.808 s <<< FAILURE! - in com.shippio.shippiotest.MainPageTest
+toolsMenu  Time elapsed: 6.585 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //div[contains(@class, 'menu-main__item') and text() = 'Developer Tools']}
+Expected: visible or transparent: visible or have css value opacity=0
+Screenshot: file:/C:/Users/user/IdeaProjects/ShippioTest/build/reports/tests/1670524598765.0.png
+Page source: file:/C:/Users/user/IdeaProjects/ShippioTest/build/reports/tests/1670524598765.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'menu-main__item') and text() = 'Developer Tools']"}
+	at com.shippio.shippiotest.MainPageTest.toolsMenu(MainPageTest.java:41)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'menu-main__item') and text() = 'Developer Tools']"}
+  (Session info: chrome=108.0.5359.96)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8II7644', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:33952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 437287146fd9454da4e5c4e48db0506d
+*** Element info: {Using=xpath, value=//div[contains(@class, 'menu-main__item') and text() = 'Developer Tools']}
+	at com.shippio.shippiotest.MainPageTest.toolsMenu(MainPageTest.java:41)
+
+navigationToAllTools  Time elapsed: 6.624 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {a.wt-button_mode_primary}
+Expected: visible or transparent: visible or have css value opacity=0
+Screenshot: file:/C:/Users/user/IdeaProjects/ShippioTest/build/reports/tests/1670524604835.1.png
+Page source: file:/C:/Users/user/IdeaProjects/ShippioTest/build/reports/tests/1670524604835.1.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a.wt-button_mode_primary"}
+	at com.shippio.shippiotest.MainPageTest.navigationToAllTools(MainPageTest.java:48)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"a.wt-button_mode_primary"}
+  (Session info: chrome=108.0.5359.96)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8II7644', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:33952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 437287146fd9454da4e5c4e48db0506d
+*** Element info: {Using=css selector, value=a.wt-button_mode_primary}
+	at com.shippio.shippiotest.MainPageTest.navigationToAllTools(MainPageTest.java:48)
+
